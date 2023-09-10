@@ -1,4 +1,4 @@
 module.exports = {
   name: 'ecommerce',
-  remotes: ['electronic-fashion-home'],
+  remotes: ['electronic-fashion-home', 'electronic'],
 };
