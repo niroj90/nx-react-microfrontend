@@ -4,6 +4,8 @@ import NxWelcome from './nx-welcome';
 
 import { Link, Route, Routes } from 'react-router-dom';
 
+const Fashion = React.lazy(() => import('fashion/Module'));
+
 const Electronic = React.lazy(() => import('electronic/Module'));
 
 const ElectronicFashionHome = React.lazy(
@@ -18,6 +20,9 @@ export function App() {
           <Link to="/">Home</Link>
         </li>
         <li>
+          <Link to="/fashion">Fashion</Link>
+        </li>
+        <li>
           <Link to="/electronic">Electronic</Link>
         </li>
 
@@ -27,6 +32,7 @@ export function App() {
       </ul>
       <Routes>
         <Route path="/" element={<NxWelcome title="ecommerce" />} />
+        <Route path="/fashion" element={<Fashion />} />
         <Route path="/electronic" element={<Electronic />} />
 
         <Route
