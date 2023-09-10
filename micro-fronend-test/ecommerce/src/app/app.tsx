@@ -8,9 +8,6 @@ const Fashion = React.lazy(() => import('fashion/Module'));
 
 const Electronic = React.lazy(() => import('electronic/Module'));
 
-const ElectronicFashionHome = React.lazy(
-  () => import('electronic-fashion-home/Module')
-);
 
 export function App() {
   return (
@@ -26,19 +23,12 @@ export function App() {
           <Link to="/electronic">Electronic</Link>
         </li>
 
-        <li>
-          <Link to="/electronic-fashion-home">ElectronicFashionHome</Link>
-        </li>
+        
       </ul>
       <Routes>
         <Route path="/" element={<NxWelcome title="ecommerce" />} />
         <Route path="/fashion" element={<Fashion />} />
         <Route path="/electronic" element={<Electronic />} />
-
-        <Route
-          path="/electronic-fashion-home"
-          element={<ElectronicFashionHome />}
-        />
       </Routes>
     </React.Suspense>
   );
