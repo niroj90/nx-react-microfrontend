@@ -5,4 +5,4 @@ declare module 'electronic/Module';
 
 declare module 'fashion/Module';
 
-declare module 'bootstrap/Module';
+declare module 'food/Module';

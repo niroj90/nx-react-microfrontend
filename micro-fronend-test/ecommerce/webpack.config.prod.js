@@ -24,7 +24,7 @@ const prodConfig = {
    * ]
    */
   remotes: [['electronic', 'http://localhost:4201/'],
-  ['fashion', 'http://localhost:4202/']],
+  ['fashion', 'http://localhost:4202/'],['food', 'http://localhost:4204/']],
 };
 
 // Nx plugins for webpack to build config object from Nx options and context.
