@@ -4,7 +4,7 @@ import NxWelcome from './nx-welcome';
 
 import { Link, Route, Routes } from 'react-router-dom';
 
-const Bootstrap = React.lazy(() => import('bootstrap/Module'));
+
 
 const Fashion = React.lazy(() => import('fashion/Module'));
 
@@ -17,9 +17,7 @@ export function App() {
         <li>
           <Link to="/">Home</Link>
         </li>
-        <li>
-          <Link to="/bootstrap">Bootstrap</Link>
-        </li>
+       
         <li>
           <Link to="/fashion">Fashion</Link>
         </li>
@@ -29,7 +27,6 @@ export function App() {
       </ul>
       <Routes>
         <Route path="/" element={<NxWelcome title="ecommerce" />} />
-        <Route path="/bootstrap" element={<Bootstrap />} />
         <Route path="/fashion" element={<Fashion />} />
         <Route path="/electronic" element={<Electronic />} />
       </Routes>
