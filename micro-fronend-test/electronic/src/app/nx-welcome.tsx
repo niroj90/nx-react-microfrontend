@@ -1,3 +1,4 @@
+
 /*
  * * * * * * * * * * * * * * * * * * * * * * * * * * * *
  This is a starter component and can be deleted.
@@ -8,11 +9,14 @@
 export function NxWelcome({ title }: { title: string }) {
   return (
     <>
-      <div className="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg">
-    <div className="rounded-md bg-white shadow-xs">
-      Test
+    <div className="container mx-auto bg-gray-200 rounded-xl shadow border p-8 m-10">
+      <p className="text-3xl text-gray-700 font-bold mb-5">
+        Welcome!
+      </p>
+      <p className="text-gray-500 text-lg">
+        React and Tailwind CSS in action
+      </p>
     </div>
-  </div>
     </>
   );
 }

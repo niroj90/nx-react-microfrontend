@@ -19,7 +19,8 @@
         "styles": ["electronic/src/styles.css"],
         "scripts": [],
         "isolatedConfig": true,
-        "webpackConfig": "electronic/webpack.config.js"
+        "webpackConfig": "electronic/webpack.config.js",
+        "postcssConfig": "electronic/postcss.config.js"
       },
       "configurations": {
         "development": {
