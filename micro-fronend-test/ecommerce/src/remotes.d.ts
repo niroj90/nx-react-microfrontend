@@ -4,3 +4,5 @@
 declare module 'electronic/Module';
 
 declare module 'fashion/Module';
+
+declare module 'bootstrap/Module';
